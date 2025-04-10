@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng" rel="stylesheet">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png"/>
+    <title>中国古代发明创造可视化</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="overview">
+                    <h1>主页</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="background">
+                    <h1>精神永传承</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="main">
+                    <h1>发明展板</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="timeaxis">
+                    <h1>上下五千年</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data">
+                    <h1>数据观之</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ai">
+                    <h1>你问我答</h1>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--banner-->
+    <div class="cont">
+        <div class="list">
+            <div class="pic1" data-index=0 style="opacity: 1; z-index: 2;"></div>
+            <div class="pic2" data-index=1></div>
+            <div class="pic3" data-index=2></div>
+            <div class="pic4" data-index=3></div>
+            <div class="pic5" data-index=4></div>
+        </div>
+        <div class="btns">
+            <span class="bgc"></span> <!--当前所播放位置对应的下方小横线-->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-prev"> ⬅ </button>
+            <button class="btn btn-next"> ➡ </button>
+        </div>
+    </div>
+
+    <!--cards-->
+    <div class="container">
+        <div class="cards-container">
+            {%PRODUCT_CARDS%}
+        </div>
+    </div>
+</body>
+
+</html>

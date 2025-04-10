@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国古代发明成就</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
+            background-image: url(https://pic1.imgdb.cn/item/67e3e8c70ba3d5a1d7e43d0b.webp);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #374151;
+            line-height: 1.5;
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* 发明卡片样式 */
+        .invention-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .invention-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .invention-card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            color: #1f2937;
+        }
+
+        .invention-card p {
+            padding: 1rem;
+            margin: 0;
+            color: #6b7280;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>中国古代发明成就</h1>
+        <!-- 天文历法 -->
+        <div class="invention-card" onclick="window.location.href='pages/halley_comet_record.html'">
+            <h2>春秋哈雷彗星记录</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/19_7_leap_year.html'">
+            <h2>春秋19年7闰原则</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/ganshi_astronomy.html'">
+            <h2>战国《甘石星经》</h2>
+            <p>发明家：甘德、石申</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/taichu_calendar.html'">
+            <h2>西汉《太初历》</h2>
+            <p>发明家：落下闳、邓平等</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/sunspot_record.html'">
+            <h2>西汉太阳黑子记录</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/lunar_eclipse_explanation.html'">
+            <h2>东汉月食科学解释</h2>
+            <p>发明家：张衡</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/seismograph.html'">
+            <h2>东汉地动仪</h2>
+            <p>发明家：张衡</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/dayan_calendar.html'">
+            <h2>唐朝《大衍历》</h2>
+            <p>发明家：僧一行</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/meridian_measurement.html'">
+            <h2>唐朝实测地球子午线长度</h2>
+            <p>发明家：僧一行</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/twelve_qi_calendar.html'">
+            <h2>北宋“十二气历”</h2>
+            <p>发明家：沈括</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/jianyi_instrument.html'">
+            <h2>元朝简仪和高表</h2>
+            <p>发明家：郭守敬</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/shoushi_calendar.html'">
+            <h2>元朝《授时历》</h2>
+            <p>发明家：郭守敬</p>
+        </div>
+        <!-- 四大发明 -->
+        <div class="invention-card" onclick="window.location.href='pages/movable_type_printing.html'">
+            <h2>北宋活字印刷术</h2>
+            <p>发明家：毕昇</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/gunpowder_invention.html'">
+            <h2>唐朝火药发明</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/compass_invention.html'">
+            <h2>战国指南针发明</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/paper_making.html'">
+            <h2>东汉造纸术</h2>
+            <p>发明家：蔡伦（改进者）</p>
+        </div>
+        <!-- 数学 -->
+        <div class="invention-card" onclick="window.location.href='pages/zhoubi_suanjing.html'">
+            <h2>西汉《周髀算经》</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/jiuzhang_suanshu.html'">
+            <h2>东汉《九章算术》</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/pi_calculation.html'">
+            <h2>南朝祖冲之计算圆周率</h2>
+            <p>发明家：祖冲之</p>
+        </div>
+        <!-- 农学 -->
+        <div class="invention-card" onclick="window.location.href='pages/qiminyaoshu.html'">
+            <h2>北魏《齐民要术》</h2>
+            <p>发明家：贾思勰</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/nongzhengquanshu.html'">
+            <h2>明朝《农政全书》</h2>
+            <p>发明家：徐光启</p>
+        </div>
+        <!-- 医学 -->
+        <div class="invention-card" onclick="window.location.href='pages/huangdi_neijing.html'">
+            <h2>战国《黄帝内经》</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/shanghanlun.html'">
+            <h2>东汉《伤寒杂病论》</h2>
+            <p>发明家：张仲景</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/jiuwei_zhusheqi.html'">
+            <h2>东汉九针</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/bencaogangmu.html'">
+            <h2>明朝《本草纲目》</h2>
+            <p>发明家：李时珍</p>
+        </div>
+        <!-- 其他 -->
+        <div class="invention-card" onclick="window.location.href='pages/abacus.html'">
+            <h2>春秋算盘发明</h2>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/kite.html'">
+            <h2>春秋风筝发明</h2>
+            <p>发明家：墨翟、鲁班</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/wheelbarrow.html'">
+            <h2>三国独轮车发明</h2>
+            <p>发明家：诸葛亮</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/firecracker.html'">
+            <h2>唐朝鞭炮发明</h2>
+            <p>发明家：李畋</p>
+        </div>
+        <div class="invention-card" onclick="window.location.href='pages/tea_culture.html'">
+            <h2>唐朝茶文化形成</h2>
+        </div>
+    </div>
+</body>
+
+</html>    

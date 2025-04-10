@@ -1,0 +1,111 @@
+html,body,head,span,button,div,title {
+    margin: 0;
+    padding: 0;
+}
+.cont {
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: 0.1s;
+}
+.list{
+    position: relative;
+}
+.list div {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0;
+    transition: 0.1s;
+    background-size: cover;
+    background-position: center;
+}
+/*
+红色基因
+https://s2.loli.net/2025/02/06/lJMpLS2PTxcy6Wo.jpg
+https://s2.loli.net/2025/02/06/U58EksHaCZTAzc7.jpg
+https://s2.loli.net/2025/02/06/yV35GNf6mEQIJqv.jpg
+https://s2.loli.net/2025/02/06/R42tcPakyYx93bZ.jpg
+https://s2.loli.net/2025/02/06/2zc7km43BnFiVXa.jpg
+
+只此青绿
+https://s2.loli.net/2025/02/07/s6HzI2vcjYyM5Tw.jpg
+https://s2.loli.net/2025/02/07/6QMU7mwkHtv1YNL.jpg
+https://s2.loli.net/2025/02/07/T8AFraLti3wGsY2.jpg
+*/
+/* :root {
+    --img1: url(../public/imgs/001.png);
+    --img2: url(https://s2.loli.net/2025/02/06/U58EksHaCZTAzc7.jpg);
+    --img3: url(https://s2.loli.net/2025/02/06/yV35GNf6mEQIJqv.jpg);
+    --img4: url(https://s2.loli.net/2025/02/06/R42tcPakyYx93bZ.jpg);
+    --img5: url(https://s2.loli.net/2025/02/06/2zc7km43BnFiVXa.jpg);
+} */
+:root {
+    --img1: url(https://pic1.imgdb.cn/item/67e3e80c0ba3d5a1d7e43cd9.png);
+    --img2: url(https://pic1.imgdb.cn/item/67e3e8730ba3d5a1d7e43ced.png);
+    --img3: url(https://pic1.imgdb.cn/item/67e3e86b0ba3d5a1d7e43ce5.png);
+    --img4: url(https://pic1.imgdb.cn/item/67e3e8730ba3d5a1d7e43ced.png);
+    --img5: url(https://pic1.imgdb.cn/item/67e3e8790ba3d5a1d7e43cee.png);
+} 
+
+.pic1 {
+    background: var(--img1) no-repeat center red;
+}
+.pic2 {
+    background: var(--img2) no-repeat center blue;
+}
+.pic3 {
+    background: var(--img3) no-repeat center yellow;
+}
+.pic4 {
+    background: var(--img4) no-repeat center green;
+}
+.pic5 {
+    background: var(--img5) no-repeat center pink;
+}
+.btns {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    bottom: 80px;
+    margin-left: -170px;
+}
+.btns span { 
+    float: left;
+    width: 60px;
+    height: 5px;
+    margin-right: 10px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+} 
+.buttons {
+    width: 1180px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.btn {  /*左右切换按钮样式*/
+    position: absolute;
+    top: 50%;
+    margin-top: -26px;
+    width: 32px;
+    height: 52px;
+    font-size: 30px;
+    border-radius: 5px;
+    z-index: 6;
+    opacity: 0.5;
+}
+.btn-prev {
+    left: 0;
+    border: none;
+    background-color: transparent;
+}
+.btn-next {
+    right: 0;
+    border: none;
+    background-color: transparent;
+}
+.bgc {
+    background-color: white !important;
+}

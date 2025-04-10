@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng" rel="stylesheet">
+    <title>{%PRODUCTNAME%}</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="overview">
+                    <h1>主页</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="background">  
+                    <h1>中国科技成就背景</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="time-axis">
+                    <h1>上下五千年</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data">
+                    <h1>数据观之</h1>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ai">
+                    <h1>你问我答</h1>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--charts-->
+    <div class="container">
+        <div class="charts-container">
+            <div class="pie-chart-container">
+                <div class="chart" id="chart2"></div>
+            </div>
+            <div class="bar-chart-container">
+                <div class="chart" id="chart6"></div>
+            </div>
+            <div class="line-chart-container">
+                <div class="chart" id="chart4"></div>
+            </div>
+            <div class="word-cloud-container">
+                <div class="chart" id="chart5"></div>
+            </div>
+            <div class="map-container">
+                <div class="chart" id="chart3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud/dist/echarts-wordcloud.min.js"></script>
+</body>
+
+</html>

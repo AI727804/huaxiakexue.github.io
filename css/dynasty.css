@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.charts-container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.pie-chart-container{
+    position: fixed;
+    width: 25%;
+    height: 50vh;
+    margin: auto;
+    padding: auto;
+    top: 60px;
+    left: 40px;
+    /* border: 1px solid #ccc; */
+    z-index: 1000;
+}
+.bar-chart-container{
+    position: fixed;
+    width: 25%;
+    height: 50vh;
+    margin: auto;
+    padding: auto;
+    bottom: 0;
+    left: 40px;
+    /* border: 1px solid #ccc; */
+    z-index: 1000;
+}
+.line-chart-container{
+    position: fixed;
+    width: 25%;
+    height: 50vh;
+    margin: auto;
+    padding: auto;
+    top: 60px;
+    right: 40px;
+    /* border: 1px solid #ccc; */
+    z-index: 1000;
+}
+.word-cloud-container{
+    position: fixed;
+    width: 25%;
+    height: 50vh;
+    margin: auto;
+    padding: auto;
+    bottom: 0;
+    right: 40px;
+    /* border: 1px solid #ccc; */
+    z-index: 1000;
+}
+.map-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0rem;
+    border: 1px solid #ccc;
+    /* 居中 */
+    display: flex;
+    z-index: 1;
+}
+.chart{
+    /* 占满其父元素 */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}

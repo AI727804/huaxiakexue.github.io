@@ -1,0 +1,72 @@
+/* 重置默认样式 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* 隐藏页面滚动条 */
+}
+
+/* 容器样式 */
+.container {
+    position: relative; /* 相对定位 */
+    width: 100%;
+    height: 100vh; /* 占满整个视口高度 */
+    overflow: hidden;
+}
+
+/* 照片区域样式 */
+.picture {
+    position: absolute; /* 绝对定位 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 图片按比例缩放，覆盖整个区域 */
+}
+
+/* 文字描述区域样式 */
+.description {
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 精确居中 */
+    text-align: center; /* 文字居中 */
+    color: white; /* 文字颜色 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* 最大宽度 */
+    max-height: 80vh; /* 最大高度 */
+    overflow-y: auto; /* 文字内容多时滚动 */
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.text-container {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 翻页指示器样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination span {
+    font-size: 16px;
+    color: white;
+}

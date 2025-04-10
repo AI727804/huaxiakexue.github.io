@@ -1,0 +1,119 @@
+.container {
+  /*background: linear-gradient(to bottom right, #9be15d, #00e3ae);*/
+  display: flex;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.cards-container {
+  margin: 16rem auto;
+  padding: 8rem auto;
+  width: 95rem;
+  position: relative;
+  z-index: 100;
+}
+.card {
+  background: white;
+  box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 5rem;
+  transform: skewX(-20deg);
+  display: flex;
+  transition: all 0.5s;
+}
+.card__emoji {
+  font-size: 4.3rem;
+  line-height: 1.1;
+  padding: 1.5rem 6rem 0.5rem 1.5rem;
+  letter-spacing: 0rem;
+  transform: skewX(-5deg);
+  /*左对齐*/
+  align-self: flex-start;
+}
+.card__title-box {
+  background: linear-gradient(to bottom, #0b006e, #1fd7f7);
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+.card__title {
+  font-family: 'Ma Shan Zheng', sans-serif;
+  color: white;
+  font-size: 4.5rem;
+  transform: skewX(20deg);
+}
+.card__details {
+  display: flex;
+}
+.card__detail-box {
+  margin: auto;
+  align-self: stretch;
+  /* border-right: 1px solid #ddd; */
+  display: flex;
+  align-items: center;
+}
+.card__detail-box:last-child {
+  border: none;
+}
+.card__detail {
+  font-weight: 400;
+  font-size: 2.5rem;
+  transform: skewX(20deg);
+  padding: 1.75rem;
+}
+.card__detail--organic {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  background-image: linear-gradient(to right,#0b006e, #1fd7f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card__detail--price {
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+.card__link:link,
+.card__link:visited {
+  flex: 0 0 auto;
+  background-color: #0b006e;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.card__link:hover,
+.card__link:active {
+  background-color: #0b006e;
+}
+.card__link span {
+  transform: skewX(20deg);
+}
+.card:hover {
+  transform: skewX(-20deg) scale(1.08);
+  box-shadow: 0 3rem 8rem 2rem rgba(0, 0, 0, 0.15);
+}
+.emoji-left {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.emoji-right {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.not-organic {
+  display: none;
+}
